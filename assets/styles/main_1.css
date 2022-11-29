@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+html{
+    background-color: black;
+    scroll-behavior: smooth;
+    height:100vh;
+}
+body{
+    pointer-events: none;
+    justify-content: center;
+}
+a{
+    text-decoration:none;
+    display:inline-block;
+}
+center{
+    pointer-events: none;
+}
+#particles-js{
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:150vh;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    filter:drop-shadow(0px 0px 3px white);
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    position:absolute;
+    z-index: -1;
+}
+
+#main-container{
+    pointer-events: none;
+}
+
+.title-text{
+    position: relative;
+    left:45%;
+    display:inline-block;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 3.5em;
+    margin-top:30vh;
+    color:rgba(255,255,255,0.5);
+    animation: zoomIn;
+    animation-duration: 2s;
+    opacity: 1;
+    text-shadow: 0px 0px 10px white;
+}
+#spacer{
+    display:inline-block;
+    margin-top:5vh;
+    margin-bottom:70vh;
+}
+
+#box1_title{
+    max-height:5vh;
+    text-align: center;
+    background:linear-gradient(to bottom,white,transparent)
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgba(0,0,0,0.2);
+    left:-5px;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    position: absolute;
+    left:-5px;
+    height: 2px;
+    background: white;
+    width: 0%;
+    filter:drop-shadow(0px 0px 5px white);
+  }
